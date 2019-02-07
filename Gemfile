@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-
+gem 'bundler', '~> 1.16', '>= 1.16.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,11 +23,21 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# group :development, :test do
+#   gem 'byebug'
+#   gem 'spring'
+#   gem 'rspec-rails'
+#   gem 'factory_bot_rails'
+#   gem 'capybara'
+#   gem 'database_cleaner'
+# end
+
 group :development, :test do
   gem 'byebug'
   gem 'spring'
   gem 'rspec-rails'
-  gem 'factory_bot_rails'
+  gem 'factory_bot', '~> 4.8.2' #Add ths line entirely
+  gem 'factory_bot_rails', '~> 4.8.2' #And edit this line to include the version constraint
   gem 'capybara'
   gem 'database_cleaner'
 end
