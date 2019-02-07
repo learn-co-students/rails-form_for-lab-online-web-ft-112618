@@ -23,11 +23,21 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# group :development, :test do
+#   gem 'byebug'
+#   gem 'spring'
+#   gem 'rspec-rails'
+#   gem 'factory_bot_rails'
+#   gem 'capybara'
+#   gem 'database_cleaner'
+# end
+
 group :development, :test do
   gem 'byebug'
   gem 'spring'
   gem 'rspec-rails'
-  gem 'factory_bot_rails'
+  gem 'factory_bot', '~> 4.8.2' #Add ths line entirely
+  gem 'factory_bot_rails', '~> 4.8.2' #And edit this line to include the version constraint
   gem 'capybara'
   gem 'database_cleaner'
 end
